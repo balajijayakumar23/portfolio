@@ -101,7 +101,7 @@ function App() {
       <footer>
         <div className="contact-links">
           <a href="mailto:your.email@example.com">Email</a>
-          <a href="https://linkedin.com/in/balajijayakumar" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/balaji-jayakumar/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           <a href="https://github.com/balajijayakumar" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
         <p>© 2026 Balaji Jayakumar</p>
