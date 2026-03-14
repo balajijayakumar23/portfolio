@@ -34,7 +34,7 @@ function App() {
 
       <main>
         <section id="hero" className="hero-section">
-          <h1><span className="name-accent">I'm Balaji,</span> a Salesforce professional<br className="desktop-br" />dedicated to building efficient<br className="desktop-br" />business solutions.</h1>
+          <h1><span className="name-accent">I'm Balaji,</span> a Salesforce professional <br className="desktop-br" />dedicated to building efficient <br className="desktop-br" />business solutions.</h1>
           <div className="hero-socials">
             <a href="https://www.linkedin.com/in/balaji-jayakumar/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <a href="https://www.salesforce.com/trailblazer/bjayakumar" target="_blank" rel="noopener noreferrer">Trailhead</a>
