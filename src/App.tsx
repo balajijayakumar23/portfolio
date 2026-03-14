@@ -38,30 +38,38 @@ function App() {
         
         <div className="experience-item">
           <div className="exp-header">
-            <span className="exp-company">HomeToGo GmbH</span>
+            <span className="exp-company">
+              <a href="https://www.hometogo.de/" target="_blank" rel="noopener noreferrer">HomeToGo GmbH</a>
+            </span>
             <span className="exp-date">July 2022 - Present</span>
           </div>
-          <span className="exp-role">Salesforce Business Analyst & Administrator</span>
-          <ul className="exp-bullets">
-            <li>Analyzing and documenting business processes, identifying areas for improvement.</li>
-            <li>Leading the implementation of a new dunning process, reducing reconciliation time by 30%.</li>
-            <li>Managing Salesforce user permissions, profiles, and roles to ensure data security.</li>
-            <li>Customizing Salesforce fields, page layouts, and reports to align with business needs.</li>
-          </ul>
         </div>
 
         <div className="experience-item">
           <div className="exp-header">
-            <span className="exp-company">abtis Business Solutions GmbH</span>
+            <span className="exp-company">
+              <a href="https://www.team-neusta.de/en" target="_blank" rel="noopener noreferrer">team neusta</a>
+            </span>
             <span className="exp-date">June 2020 - March 2022</span>
           </div>
-          <span className="exp-role">Salesforce Administrator</span>
-          <ul className="exp-bullets">
-            <li>Gathered and analyzed client requirements, enhancing service delivery by 20%.</li>
-            <li>Led the deployment of multi-language Service Cloud Einstein bots.</li>
-            <li>Designed and customized Salesforce Lightning pages and components.</li>
-            <li>Configured and managed Salesforce automation tools (Flows).</li>
-          </ul>
+        </div>
+
+        <div className="experience-item">
+          <div className="exp-header">
+            <span className="exp-company">
+              <a href="https://openasapp.com/" target="_blank" rel="noopener noreferrer">Open as App GmbH</a>
+            </span>
+            <span className="exp-date">August 2018 - May 2020</span>
+          </div>
+        </div>
+
+        <div className="experience-item">
+          <div className="exp-header">
+            <span className="exp-company">
+              <a href="https://www.cognizant.com/us/en" target="_blank" rel="noopener noreferrer">Cognizant</a>
+            </span>
+            <span className="exp-date">January 2016 - September 2017</span>
+          </div>
         </div>
       </section>
 
