@@ -17,7 +17,7 @@ function App() {
       <header className="site-header">
         <div className="logo"><span className="name-accent">balaji</span>jayakumar.</div>
         <div className="header-right">
-          <a href="#" className="nav-link">Resume</a>
+          <a href="https://balaji-jayakumar-dev-ed.develop.my.site.com/portfolio/s/" target="_blank" rel="noopener noreferrer" className="nav-link">Salesforce portfolio</a>
           <button onClick={toggleTheme} className="theme-toggle" aria-label="Toggle theme">
             <div className="toggle-track">
               <div className="toggle-thumb">
@@ -38,16 +38,20 @@ function App() {
           <div className="hero-socials">
             <a href="https://www.linkedin.com/in/balaji-jayakumar/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <a href="https://www.salesforce.com/trailblazer/bjayakumar" target="_blank" rel="noopener noreferrer">Trailhead</a>
-            <a href="mailto:your.email@example.com">Email</a>
+            <a href="mailto:balaji.jayakumar17@gmail.com">Email</a>
           </div>
         </section>
 
         <section id="about">
           <h2>About Me</h2>
-          <div className="about-content">
-            <p>I am a 3x Salesforce certified professional with hands-on experience in the Salesforce platform since 2020. I am passionate about driving efficiency and solving complex business challenges.</p>
-            <p>I focus on delivering high-impact solutions through data management, stakeholder engagement, and process improvement. My certifications include Salesforce Administrator, Business Analyst and Agentforce Specialist.</p>
-            <p>Outside of Salesforce, my interests include food, travel, personal finance and badminton.</p>
+          <div className="about-grid">
+            <div className="about-left">
+              <h3>Simplifying business<br />processes.</h3>
+            </div>
+            <div className="about-content">
+              <p>I like working on real-world problems and figuring out how to make things simpler and work better. Most of the time, it comes down to understanding what’s not working, breaking it down, and fixing it in a way that actually helps people day to day. I’m not a fan of overcomplicating things — I prefer solutions that are clear, practical, and easy to use.</p>
+              <p>Outside of work, I enjoy exploring food, traveling, managing personal finances, and playing badminton.</p>
+            </div>
           </div>
         </section>
 
@@ -56,61 +60,49 @@ function App() {
           
           <div className="experience-item">
             <div className="exp-header">
-              <span className="exp-company">
-                <a href="https://www.hometogo.de/" target="_blank" rel="noopener noreferrer">HomeToGo GmbH</a>
-              </span>
+              <div className="exp-company-role">
+                <span className="exp-role">Salesforce Administrator & Business Analyst</span>
+                <span className="exp-company">
+                  <a href="https://www.hometogo.de/" target="_blank" rel="noopener noreferrer">HomeToGo GmbH</a>, Berlin
+                </span>
+              </div>
               <span className="exp-date">July 2022 - Present</span>
             </div>
           </div>
 
           <div className="experience-item">
             <div className="exp-header">
-              <span className="exp-company">
-                <a href="https://www.team-neusta.de/en" target="_blank" rel="noopener noreferrer">team neusta</a>
-              </span>
+              <div className="exp-company-role">
+                <span className="exp-role">Technical Consultant & Salesforce Administrator</span>
+                <span className="exp-company">
+                  <a href="https://www.team-neusta.de/en" target="_blank" rel="noopener noreferrer">team neusta</a>, Berlin
+                </span>
+              </div>
               <span className="exp-date">June 2020 - March 2022</span>
             </div>
           </div>
 
           <div className="experience-item">
             <div className="exp-header">
-              <span className="exp-company">
-                <a href="https://openasapp.com/" target="_blank" rel="noopener noreferrer">Open as App GmbH</a>
-              </span>
+              <div className="exp-company-role">
+                <span className="exp-role">Technical Consultant</span>
+                <span className="exp-company">
+                  <a href="https://openasapp.com/" target="_blank" rel="noopener noreferrer">Open as App GmbH</a>, Berlin
+                </span>
+              </div>
               <span className="exp-date">August 2018 - May 2020</span>
             </div>
           </div>
 
           <div className="experience-item">
             <div className="exp-header">
-              <span className="exp-company">
-                <a href="https://www.cognizant.com/us/en" target="_blank" rel="noopener noreferrer">Cognizant</a>
-              </span>
+              <div className="exp-company-role">
+                <span className="exp-role">Programmer Analyst</span>
+                <span className="exp-company">
+                  <a href="https://www.cognizant.com/us/en" target="_blank" rel="noopener noreferrer">Cognizant</a>, Chennai
+                </span>
+              </div>
               <span className="exp-date">January 2016 - September 2017</span>
-            </div>
-          </div>
-        </section>
-
-        <section id="works">
-          <h2>Selected Works</h2>
-          <div className="works-grid">
-            <div className="work-item">
-              <h3>Dunning Process Automation</h3>
-              <p>Reduced reconciliation time by 30% through custom Salesforce automation.</p>
-              <div className="work-tags">
-                <span>Salesforce</span>
-                <span>Flows</span>
-                <span>Automation</span>
-              </div>
-            </div>
-            <div className="work-item">
-              <h3>Multi-language Service Bots</h3>
-              <p>Implemented AI-driven Einstein bots to enhance customer support.</p>
-              <div className="work-tags">
-                <span>Einstein Bots</span>
-                <span>Service Cloud</span>
-                <span>AI</span>
-              </div>
             </div>
           </div>
         </section>
@@ -152,7 +144,7 @@ function App() {
       <footer className="site-footer">
         <div className="cta">
           <h2>Stay connected w/ me.</h2>
-          <a href="mailto:your.email@example.com" className="cta-link">Let's Connect →</a>
+          <a href="mailto:balaji.jayakumar17@gmail.com" className="cta-link">Let's Connect →</a>
         </div>
         <div className="footer-bottom">
           <div className="footer-socials">

@@ -36,9 +36,9 @@ body {
 }
 
 .portfolio {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 60px;
 }
 
 /* Header */
@@ -135,13 +135,13 @@ body {
 }
 
 .hero-section h1 {
-  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
   font-weight: 900;
-  line-height: 1.2;
+  line-height: 1.1;
   letter-spacing: -0.02em;
   text-align: center;
   margin-bottom: 32px;
-  max-width: 1100px;
+  max-width: 1200px;
 }
 
 .desktop-br {
@@ -152,6 +152,8 @@ body {
   display: flex;
   gap: 24px;
   justify-content: center;
+  width: 100%;
+  margin-top: 20px;
 }
 
 .hero-socials a {
@@ -185,14 +187,33 @@ h2 {
 }
 
 /* About */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(20px, 4vw, 60px);
+  align-items: start;
+}
+
+.about-left h3 {
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
 .about-content {
-  font-size: clamp(1.1rem, 3vw, 1.25rem);
-  max-width: 800px;
+  font-size: clamp(1.1rem, 2.5vw, 1.25rem);
   line-height: 1.6;
+  padding-top: 10px;
 }
 
 .about-content p {
-  margin-bottom: 32px;
+  margin-bottom: 20px;
+}
+
+.about-content p:last-child {
+  margin-bottom: 0;
 }
 
 /* Experience */
@@ -209,20 +230,34 @@ h2 {
 .exp-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   gap: 20px;
 }
 
-.exp-company a {
+.exp-company-role {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.exp-role {
   color: var(--text-color);
-  text-decoration: none;
   font-weight: 800;
   font-size: clamp(1.2rem, 4vw, 1.5rem);
+}
+
+.exp-company a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
+  border-bottom: 1px solid var(--border-color);
   transition: var(--transition);
 }
 
 .exp-company a:hover {
-  opacity: 0.7;
+  color: var(--text-color);
+  border-bottom-color: var(--text-color);
 }
 
 .exp-date {
@@ -230,6 +265,7 @@ h2 {
   font-weight: 500;
   font-size: 0.9rem;
   white-space: nowrap;
+  padding-top: 8px;
 }
 
 /* Works */
@@ -310,10 +346,15 @@ h2 {
   font-weight: 700;
   font-size: 1.2rem;
   transition: var(--transition);
+  cursor: pointer;
+  text-align: center;
 }
 
 .cert-item:hover {
-  border-color: var(--text-color);
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--bg-color);
+  transform: translateY(-5px);
 }
 
 /* Footer */
@@ -387,7 +428,7 @@ h2 {
   }
 
   .hero-section h1 {
-    text-align: center;
+    text-align: left;
     max-width: 100%;
   }
 
