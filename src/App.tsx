@@ -49,7 +49,7 @@ function App() {
               <h3>Simplifying business<br />processes.</h3>
             </div>
             <div className="about-content">
-              <p>I like working on real-world problems and figuring out how to make things simpler and work better. Most of the time, it comes down to understanding what’s not working, breaking it down, and fixing it in a way that actually helps people day to day. I’m not a fan of overcomplicating things — I prefer solutions that are clear, practical, and easy to use.</p>
+              <p>I like working on real-world problems and figuring out how to make things simpler and work better. Most of the time, it comes down to understanding what’s not working, breaking it down, and fixing it in a way that actually helps people day to day. I’m not a fan of overcomplicating things, I prefer solutions that are clear, practical, and easy to use.</p>
               <p>Outside of work, I enjoy exploring food, traveling, managing personal finances, and playing badminton.</p>
             </div>
           </div>
