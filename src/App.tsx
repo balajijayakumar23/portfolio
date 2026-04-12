@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react'
-import './index.css'
 
 function App() {
-  const [theme, setTheme] = useState('light')
+  const [theme, setTheme] = useState(() =>
+    window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+  )
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme)

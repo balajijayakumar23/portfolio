@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
 :root {
   --bg-color: #ffffff;
   --text-color: #000000;
@@ -268,50 +270,6 @@ h2 {
   padding-top: 8px;
 }
 
-/* Works */
-.works-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 40px;
-}
-
-.work-item {
-  padding: 40px;
-  border: 1px solid var(--border-color);
-  transition: var(--transition);
-}
-
-.work-item:hover {
-  background-color: var(--border-color);
-}
-
-.work-item h3 {
-  font-size: 1.25rem;
-  margin-bottom: 16px;
-  font-weight: 800;
-}
-
-.work-item p {
-  color: var(--text-secondary);
-  margin-bottom: 24px;
-}
-
-.work-tags {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-
-.work-tags span {
-  font-size: 0.7rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  padding: 4px 8px;
-  background-color: var(--border-color);
-  border-radius: 2px;
-}
-
 /* Skills */
 .skills-grid {
   display: grid;
@@ -346,7 +304,6 @@ h2 {
   font-weight: 700;
   font-size: 1.2rem;
   transition: var(--transition);
-  cursor: pointer;
   text-align: center;
 }
 
@@ -436,14 +393,14 @@ h2 {
     display: none;
   }
 
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
   .exp-header {
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
-  }
-
-  .works-grid {
-    grid-template-columns: 1fr;
   }
 
   .footer-bottom {
