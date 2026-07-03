@@ -18,7 +18,7 @@ function App() {
       <header className="site-header">
         <div className="logo"><span className="name-accent">balaji</span>jayakumar.</div>
         <div className="header-right">
-          <a href="https://balaji-jayakumar-dev-ed.develop.my.site.com/portfolio/s/" target="_blank" rel="noopener noreferrer" className="nav-link">Salesforce portfolio</a>
+          
           <button onClick={toggleTheme} className="theme-toggle" aria-label="Toggle theme">
             <div className="toggle-track">
               <div className="toggle-thumb">
