@@ -19,11 +19,13 @@
 
   /* One shared size for every big display statement on the page (hero headline,
      "Simplifying business processes.", "Let's Build.") so they read as one consistent
-     typographic voice instead of three different scales. Scales off the SMALLER of
-     viewport width/height so the hero (which must fit its headline + cert pills inside
-     one viewport, no scrolling) shrinks automatically on short/landscape viewports
-     instead of pushing the pills off the bottom of the screen. */
-  --display-size: clamp(45px, min(8.3vw, 10vh), 100px);
+     typographic voice instead of three different scales. The hero MUST fill the whole
+     viewport with only the headline + cert pills visible - the size is picked large
+     enough (both width- and height-driven) that the headline's real content naturally
+     uses most of that space, rather than a small headline sitting above a big blank
+     gap. Still shrinks on short/landscape viewports via the vh term so pills never get
+     pushed off the bottom of the screen. */
+  --display-size: clamp(45px, min(8.3vw, 12.3vh), 112px);
 
   color-scheme: dark;
 }
@@ -253,12 +255,14 @@ section {
 /* ---------------------------------------------------------------- opening statement */
 
 .opening {
-  /* Tight to the nav on top; bottom padding inherited from the base `section` rule below
-     (120px), same as every other section - no forced min-height. A forced full-viewport
-     height reliably kept Skills off-screen at load, but on wide/short-aspect monitors it
-     produces a large, disproportionate empty gap after the cert pills - which is worse
-     than occasionally letting Skills start slightly earlier on those screens. */
+  /* Tight to the nav on top. min-height guarantees only the headline + cert pills are
+     visible on load - this is a hard requirement, not a nice-to-have - so any leftover
+     space below the pills on very short/wide content is deliberate hero framing, not a
+     bug. --display-size is tuned to fill most of this on its own via real content. */
   padding-top: 64px;
+  padding-bottom: 120px;
+  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 .headline {
