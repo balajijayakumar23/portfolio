@@ -17,6 +17,12 @@
   --content-max: 1400px;
   --content-pad-x: 40px;
 
+  /* Single source of truth for the page's vertical rhythm - every top-level section
+     (opening, skills, statement, about, work, contact) uses this for both its top and
+     bottom padding, so the gap between sections reads as one even, consistent beat
+     instead of each section carrying its own bespoke spacing. */
+  --section-pad-y: 120px;
+
   /* One shared size for every big display statement on the page (hero headline,
      "Simplifying business processes.", "Let's Build.") so they read as one consistent
      typographic voice instead of three different scales. The hero MUST fill the whole
@@ -110,7 +116,7 @@ main {
 
 section {
   position: relative;
-  padding: 120px var(--content-pad-x);
+  padding: var(--section-pad-y) var(--content-pad-x);
   max-width: var(--content-max);
   margin: 0 auto;
   scroll-margin-top: 96px;
@@ -252,16 +258,11 @@ section {
 
 /* ---------------------------------------------------------------- opening statement */
 
-.opening {
-  /* Tight to the nav on top. min-height guarantees only the headline + cert pills are
-     visible on load - this is a hard requirement, not a nice-to-have - so any leftover
-     space below the pills on very short/wide content is deliberate hero framing, not a
-     bug. --display-size is tuned to fill most of this on its own via real content. */
-  padding-top: 64px;
-  padding-bottom: 120px;
-  min-height: 100vh;
-  min-height: 100dvh;
-}
+/* No .opening padding override and no forced min-height - the hero sizes to its
+   actual content (headline + cert pills) and inherits the same top/bottom padding
+   as every other section from the base `section` rule above, so the gap before
+   Skills matches the rhythm between all other sections on the page (including at
+   the mobile breakpoint below, where `section` alone sets the reduced padding). */
 
 .headline {
   font-size: var(--display-size);
@@ -295,11 +296,6 @@ section {
 }
 
 /* ---------------------------------------------------------------- skills */
-
-.skills-section {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
 
 .skills-grid {
   display: grid;
@@ -488,11 +484,6 @@ section {
 
 /* ---------------------------------------------------------------- contact */
 
-.contact-section {
-  padding-top: 100px;
-  padding-bottom: 120px;
-}
-
 .contact-headline {
   font-size: var(--display-size);
   line-height: 1;
@@ -609,10 +600,6 @@ section {
 
   section {
     padding: 96px 28px;
-  }
-
-  .opening {
-    padding-top: 48px;
   }
 
   .about-grid {
