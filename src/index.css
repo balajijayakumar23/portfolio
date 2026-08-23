@@ -458,6 +458,18 @@ section {
   max-width: 62ch;
 }
 
+.work-url {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 14px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 .work-cue {
   flex-shrink: 0;
   font-family: var(--font-body);

@@ -4,7 +4,8 @@ const WORK_ITEMS = [
   {
     index: '01',
     title: 'mit Karte, bitte',
-    href: 'https://variedvault.github.io/mitkartebitte/',
+    href: 'https://mitkarte-bitte.de',
+    url: 'mitkarte-bitte.de',
     description:
       'A German verb-conjugation trainer built for grammar depth over streaks: full conjugation tables, spaced repetition, no gamified filler. Installable PWA.',
   },
@@ -12,6 +13,7 @@ const WORK_ITEMS = [
     index: '02',
     title: 'Life Line',
     href: 'https://variedvault.github.io/life-line/',
+    url: 'variedvault.github.io/life-line',
     description:
       "Renders a life as a transit-map SVG: time-proportional rail, category-colored segments, a live 'today' marker and shareable link. Single-file static web app.",
   },
@@ -444,6 +446,16 @@ function BurstWord({
   )
 }
 
+function ExternalLinkIcon() {
+  return (
+    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+      <path d="M15 3h6v6" />
+      <path d="M10 14 21 3" />
+    </svg>
+  )
+}
+
 function Nav() {
   return (
     <header className="nav">
@@ -570,6 +582,10 @@ function App() {
                   </span>
                   <h3>{item.title}</h3>
                   <p>{item.description}</p>
+                  <span className="work-url">
+                    {item.url}
+                    <ExternalLinkIcon />
+                  </span>
                 </div>
                 <span className="work-cue" aria-hidden="true">
                   View project →
