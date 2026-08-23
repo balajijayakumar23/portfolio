@@ -253,17 +253,12 @@ section {
 /* ---------------------------------------------------------------- opening statement */
 
 .opening {
-  /* Tight to the nav on top (per the earlier spacing fix). A flat/vh-scaled
-     padding-bottom can't reliably clear the fold on its own - line count jumps
-     non-linearly across breakpoints (3 lines here, 4 there), so a fixed formula either
-     under- or over-shoots depending on viewport. min-height is the only thing that
-     self-corrects for that: it only ever adds the space actually still needed to reach
-     the fold, and with the bigger/wider headline the leftover is far smaller than the
-     old 100vh version ever produced. */
+  /* Tight to the nav on top; bottom padding inherited from the base `section` rule below
+     (120px), same as every other section - no forced min-height. A forced full-viewport
+     height reliably kept Skills off-screen at load, but on wide/short-aspect monitors it
+     produces a large, disproportionate empty gap after the cert pills - which is worse
+     than occasionally letting Skills start slightly earlier on those screens. */
   padding-top: 64px;
-  padding-bottom: 120px;
-  min-height: 100vh;
-  min-height: 100dvh;
 }
 
 .headline {
