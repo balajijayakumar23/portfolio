@@ -11,6 +11,14 @@ const WORK_ITEMS = [
   },
   {
     index: '02',
+    title: 'All-in-One Calculator',
+    href: 'https://variedvault.github.io/all-in-one/',
+    url: 'variedvault.github.io/all-in-one',
+    description:
+      'A browser-based suite of clean financial calculators covering German statutory pension, emergency fund, net worth, and FIRE. No accounts and no backend; everything runs and stays in your browser, with export and import for moving data between devices.',
+  },
+  {
+    index: '03',
     title: 'Life Line',
     href: 'https://variedvault.github.io/life-line/',
     url: 'variedvault.github.io/life-line',
